@@ -1,0 +1,24 @@
+git status														visualizar o status dos arquivos
+git config --global user.name "seunome"							Configura nome de usuário
+git config --global user.email "seuemail"						Configura email
+git config --lit												Mostra todas as configurações realizadas
+git init														Inicia o git no local de repositório local
+git add "arquivo ou pasta"										Adiciona o arquivo ou pasta no repositório para ser comitado
+git commit -m "mensagem"										Comita tudo que está pendente
+git commit -am "mensagem"										Comita tudo que está pendente e sobe para o servidor remoto
+git log															Mostra as alterações de todos os usuários
+git log --author="Fred"											Mostra as alterações de um usuário específico
+git shortlog													Mostra a quantidade de alterações que um usuário realizou
+git shortlog --graph											Mostra as alterações de usuários em modo gráfico
+git log --graph
+git show														Mostra as alterações realizadas num determinado arquivo
+git diff														Mostra as diferenças entre os arquivos antes de realizar o commit
+git checkout arquivo.ext										
+
+GERAR CHAVE
+ssh-keygen -t rsa -b 4096 -C "fredzanitti@gmail.com"			Gerar chave
+cd ~/.ssh/														Chegar no diretório para buscar a chave para compartilhamento
+cat id_rsa.pub													Chave pública que deve ser copiada para acessar remotamente
+git remote add originssh git@github.com:fredzanitti/projetoEstudos.git
+git push -u originssh master
+
