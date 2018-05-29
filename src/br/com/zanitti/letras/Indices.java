@@ -1,7 +1,9 @@
 package br.com.zanitti.letras;
 
 public class Indices {
-	private String letras[] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+	private String letras[] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", 
+							   "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", 
+							   "V", "W", "X", "Y", "Z"};
 
 	/**
 	 * Retornar o código referente a letra informada
