@@ -19,6 +19,6 @@ GERAR CHAVE
 ssh-keygen -t rsa -b 4096 -C "fredzanitti@gmail.com"			Gerar chave
 cd ~/.ssh/														Chegar no diretório para buscar a chave para compartilhamento
 cat id_rsa.pub													Chave pública que deve ser copiada para acessar remotamente
-git remote add originssh git@github.com:fredzanitti/projetoEstudos.git
-git push -u originssh master
+git remote add origin git@github.com:fredzanitti/projetoEstudos.git
+git push -u origin master
 
