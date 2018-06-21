@@ -12,7 +12,7 @@ public class numeroPorExtenso {
 		int num = s.nextInt();
 		
 		converteNumeros cv = new converteNumeros();
-		cv.converter(num);
+		System.out.println(cv.converter(num));
 		s.close();
 	}
 

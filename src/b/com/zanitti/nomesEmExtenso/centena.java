@@ -6,7 +6,7 @@ public class centena {
 		String ext = "";
 		switch (num) {
 		case 100:
-			ext = "cem";
+			ext = "cento";
 			break;
 		case 200:
 			ext = "duzentos";

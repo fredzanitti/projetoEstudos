@@ -2,9 +2,42 @@ package b.com.zanitti.nomesEmExtenso;
 
 public class converteNumeros {
 	
-	public void converter(int num){
+	public String converter(int num) {
+		String nome = "";
+		if (num > 999) {
+			if (num == 1000) {
+				nome = "mil";
+			} else {
+				int numCent = num % 1000;
+				int numMil = num - (num % 1000);
+				
+				if (numMil == 1000) {
+					nome = "mil e " +
+							converterCentenaDezenaUnidade(numCent);	
+				} else {	
+					if (numCent == 0) {
+						nome = converterCentenaDezenaUnidade(numMil/1000) + " mil";
+					} else {
+						nome = converterCentenaDezenaUnidade(numMil/1000) + " mil e " +
+								converterCentenaDezenaUnidade(numCent);
+					}
+				}
+			}
+		} else {
+			nome = converterCentenaDezenaUnidade(num);
+		}
+		
+		return nome.toUpperCase();
+	}
+	
+	public String converterCentenaDezenaUnidade(int num){
 		
 		String nome = "";
+		
+		if (num == 100) {
+			nome = "cem";
+			return nome;
+		}
 		
 		if (num < 10) { //unidades
 			nome = unidades.unidade(num);	
@@ -62,8 +95,8 @@ public class converteNumeros {
 				}
 			}
 		}
-		
-		System.out.println(nome);
+		return nome;
 		
 	}
+
 }
