@@ -7,12 +7,18 @@ import b.com.zanitti.nomesEmExtenso.converteNumeros;
 public class numeroPorExtenso {
 
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);		
-		System.out.print("Digite um número: ");
-		int num = s.nextInt();
-		
-		converteNumeros cv = new converteNumeros();
-		System.out.println(cv.converter(num));
+		Scanner s = new Scanner(System.in);
+
+		System.out.print("Quantidade de testes: ");
+		int qtde = s.nextInt();
+
+		for (int i = 0; i < qtde; i++) {
+			System.out.println("");
+			System.out.print("Digite um número: ");
+			int num = s.nextInt();
+			converteNumeros cv = new converteNumeros();
+			cv.converterNumeros(num);
+		}
 		s.close();
 	}
 
