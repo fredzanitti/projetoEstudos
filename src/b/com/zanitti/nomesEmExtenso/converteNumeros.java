@@ -110,6 +110,11 @@ public class converteNumeros {
 			nome = "cem";
 			return nome;
 		}
+		
+		if (num == 0) {
+			nome = "zero";
+			return nome;
+		}
 
 		if (num < 10) { // unidades
 			nome = unidades.unidade(num);
