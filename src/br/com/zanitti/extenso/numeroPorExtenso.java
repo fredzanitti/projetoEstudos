@@ -14,7 +14,7 @@ public class numeroPorExtenso {
 
 		for (int i = 0; i < qtde; i++) {
 			System.out.println("");
-			System.out.print("Digite um número: ");
+			System.out.print("Digite um número inteiro: ");
 			int num = s.nextInt();
 			converteNumeros cv = new converteNumeros();
 			cv.converterNumeros(num);
